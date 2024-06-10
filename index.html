@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <div class="card-header">
-        <h3>Lista de Tarefas</h3>
-      </div>
-      <div class="card-body">
-        <form id="taskForm">
-          <div class="input-group">
-            <input type="text" class="form-control" id="taskInput" placeholder="Nova tarefa...">
-            <button class="btn" type="submit">Adicionar</button>
-          </div>
-        </form>
-        <ul class="list-group" id="taskList">
-          <!-- Tarefas serão adicionadas aqui -->
-        </ul>
-      </div>
-    </div>
-  </div>
+<html lang="pt-br">
 
-  <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Adicione uma nova tarefa">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+        <ul id="task-list">
+            <!-- Tarefas serão adicionadas aqui -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
